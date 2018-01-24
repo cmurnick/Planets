@@ -16,6 +16,13 @@ namespace Planets
             List<string> morePlanets = new List<string>() { "Neptune", "Pluto" };
             planetList.AddRange(morePlanets);
 
+            string[] lastFew = new string[2];
+
+            lastFew[0] = "Venus";
+            lastFew[1] ="Earth";
+
+            planetList.InsertRange(1, lastFew);
+
             foreach (var planet in planetList)
             {
                 Console.WriteLine(planet);
